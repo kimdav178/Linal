@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/david/Рабочий стол/Linal/Matrix.cpp">
+			<Option target="VectorN.cpp"/>
+		</Unit>
+		<Unit filename="/home/david/Рабочий стол/Linal/Matrix.h">
+			<Option target="VectorN.cpp"/>
+		</Unit>
 		<Unit filename="/home/david/Рабочий стол/Linal/Vector2D.cpp">
 			<Option target="VectorN.cpp"/>
 		</Unit>

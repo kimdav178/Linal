@@ -123,6 +123,33 @@ VectorN.cpp/fast:
 	$(MAKE) -f CMakeFiles/VectorN.cpp.dir/build.make CMakeFiles/VectorN.cpp.dir/build
 .PHONY : VectorN.cpp/fast
 
+Matrix.o: Matrix.cpp.o
+
+.PHONY : Matrix.o
+
+# target to build an object file
+Matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/VectorN.cpp.dir/build.make CMakeFiles/VectorN.cpp.dir/Matrix.cpp.o
+.PHONY : Matrix.cpp.o
+
+Matrix.i: Matrix.cpp.i
+
+.PHONY : Matrix.i
+
+# target to preprocess a source file
+Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/VectorN.cpp.dir/build.make CMakeFiles/VectorN.cpp.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
+
+Matrix.s: Matrix.cpp.s
+
+.PHONY : Matrix.s
+
+# target to generate assembly for a file
+Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/VectorN.cpp.dir/build.make CMakeFiles/VectorN.cpp.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
+
 Vector2D.o: Vector2D.cpp.o
 
 .PHONY : Vector2D.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... VectorN.cpp"
 	@echo "... edit_cache"
+	@echo "... Matrix.o"
+	@echo "... Matrix.i"
+	@echo "... Matrix.s"
 	@echo "... Vector2D.o"
 	@echo "... Vector2D.i"
 	@echo "... Vector2D.s"

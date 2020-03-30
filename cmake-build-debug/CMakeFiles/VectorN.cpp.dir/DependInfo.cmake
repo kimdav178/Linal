@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/david/Рабочий стол/Linal/Matrix.cpp" "/home/david/Рабочий стол/Linal/cmake-build-debug/CMakeFiles/VectorN.cpp.dir/Matrix.cpp.o"
   "/home/david/Рабочий стол/Linal/Vector2D.cpp" "/home/david/Рабочий стол/Linal/cmake-build-debug/CMakeFiles/VectorN.cpp.dir/Vector2D.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

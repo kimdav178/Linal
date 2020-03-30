@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/VectorN.cpp.dir/Vector2D.cpp.o  -o VectorN.cpp 
+/usr/bin/c++  -g   CMakeFiles/VectorN.cpp.dir/Vector2D.cpp.o CMakeFiles/VectorN.cpp.dir/Matrix.cpp.o  -o VectorN.cpp 
