@@ -47,9 +47,9 @@ public:
 
 Vector2D operator* (double a, const Vector2D v);    //Оператор умножения вектора на число
 
-ostream& operator<<(ostream& os, const Vector2D& v);    //Оператор вывода вектора в поток
+ostream& operator<<(ostream& os, const Vector2D& v);    //Вывод вектора в поток
 
-istream& operator>>(istream &is, Vector2D& v); //Оператор ввода вектора из потока
+istream& operator>>(istream &is, Vector2D& v); //Инициализация вектора из потока
 
 
 #endif //LINAL_VECTOR2D_H

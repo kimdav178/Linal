@@ -3,7 +3,7 @@
 //
 
 #include "VectorN.h"
-#include <cmath>
+using namespace std;
 
 VectorN::VectorN(unsigned int n)
 {
@@ -58,7 +58,7 @@ VectorN VectorN::operator+ (const VectorN& v)
     return f;
 }
 
-VectorN VectorN::operator* (const int& a)
+VectorN VectorN::operator* (const double & a)
 {
     VectorN f(getSize());
     for (unsigned int i=0; i<getSize(); i++)
@@ -93,4 +93,22 @@ return acos(f);
 VectorN operator* (double a,VectorN& v)
 {
     return v*a;
+}
+
+ostream& operator<<(ostream& os, unsigned int n, const VectorN& v)
+{
+    for (unsigned int i=0; i<n; i++) {
+        os << "("<<v.getValue(i)<<"; ")";
+    }
+    return os;
+}
+
+istream& operator>>(istream &is, unsigned int n, Vector2D& v)
+{
+    double a[n];
+    for (unsigned int i=0; i<n; i++) {
+        is >> a[i];
+        v.setValue(i,a[i]);
+    }
+    return is;
 }
