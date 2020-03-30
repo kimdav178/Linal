@@ -14,42 +14,42 @@ protected:
     double x;
     double y;
 public:
-    Vector2D();
-    Vector2D(double x, double y);
-    ~Vector2D();
+    Vector2D(); //Конструктор по умолчанию (координаты равны нулю)
+    Vector2D(double x, double y);   //Конструктор по двум координатам
+    ~Vector2D();    //Деструктор
 
-    double getX() const;
+    double getX() const;    //Возвращает координату х
 
-    double getY() const;
+    double getY() const;    //Возвращает координату у
 
-    void setX(double x);
+    void setX(double x);    //Устанавливает новое значение х
 
-    void setY(double y);
+    void setY(double y);    //Устанавливает новое значение у
 
     double length ();    // Возваращает длину вектора
 
     double angle (Vector2D a);    // Возвращает угол между двумя векторами (в радианах!)
 
-    bool operator== (const Vector2D& v2) const;
+    bool operator== (const Vector2D& v2) const; //Оператор сравнения двух векторов
 
-    bool operator!= (const Vector2D& v2) const;
+    bool operator!= (const Vector2D& v2) const; //Оператор неравенства
 
-    void operator *= (double a);
+    void operator *= (double a);    //Присвоить значение, умноженное на число
 
-    void operator += (Vector2D a);
+    void operator += (Vector2D a);  //Присвоить значение, к которому прибавлен другой вектор
 
-    Vector2D operator+ (const Vector2D& v2) const;
+    Vector2D operator+ (const Vector2D& v2) const;  //Оператор сложения двух векторов
 
-    Vector2D operator- (const Vector2D& v2) const;
+    Vector2D operator- (const Vector2D& v2) const;  //Оператор вычитания двух векторов
 
-    Vector2D operator* (const double &a) const;
+    Vector2D operator* (const double &a) const; //Оператор умножения вектора на число
 };
 
-Vector2D operator* (double a, const Vector2D v);
+Vector2D operator* (double a, const Vector2D v);    //Оператор умножения вектора на число
 
-ostream& operator<<(ostream& os, const Vector2D& v);
+ostream& operator<<(ostream& os, const Vector2D& v);    //Оператор вывода вектора в поток
 
-istream& operator>>(istream &is, Vector2D& v);
+istream& operator>>(istream &is, Vector2D& v); //Оператор ввода вектора из потока
 
 
 #endif //LINAL_VECTOR2D_H

@@ -40,7 +40,7 @@ double Vector2D::length ()
     return sqrt(getX()*getX()+getY()*getY());
 }
 
-double Vector2D::angle (Vector2D a)    // Возвращает угол между двумя векторами (в радианах!)
+double Vector2D::angle (Vector2D a)
 {
 
     return  acos((getX()*a.getX()+getY()*a.getY())/(length() * a.length()));
