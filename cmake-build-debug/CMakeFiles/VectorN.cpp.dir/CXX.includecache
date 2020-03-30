@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/david/Рабочий стол/Linal/Vector2D.cpp
+Vector2D.h
+/home/david/Рабочий стол/Linal/Vector2D.h
+
+/home/david/Рабочий стол/Linal/Vector2D.h
+iostream
+-
+cmath
+-
+fstream
+-
+

@@ -1,0 +1,3 @@
+/home/david/Рабочий стол/Linal/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/david/Рабочий стол/Linal/cmake-build-debug/CMakeFiles/VectorN.cpp.dir
+/home/david/Рабочий стол/Linal/cmake-build-debug/CMakeFiles/edit_cache.dir
