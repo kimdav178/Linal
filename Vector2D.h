@@ -5,6 +5,7 @@
 #ifndef LINAL_VECTOR2D_H
 #define LINAL_VECTOR2D_H
 
+#include <iostream>
 #include <cmath>
 #include <fstream>
 using namespace std;

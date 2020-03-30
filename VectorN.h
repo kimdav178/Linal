@@ -30,9 +30,9 @@ public:
 
 VectorN operator* (double a,VectorN& v);    // Умножение числа на вектор
 
-ostream& operator<<(ostream& os, const Vector2D& v);    //Вывод вектора в поток
+ostream& operator<<(ostream& os, const VectorN& v);    //Вывод вектора в поток
 
-istream& operator>>(istream &is, Vector2D& v);  //Инициалиация вектора из потока
+istream& operator>>(istream &is, VectorN& v);  //Инициалиация вектора из потока
 
 
 #endif //LINAL_VECTORN_H

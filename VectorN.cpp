@@ -95,18 +95,18 @@ VectorN operator* (double a,VectorN& v)
     return v*a;
 }
 
-ostream& operator<<(ostream& os, unsigned int n, const VectorN& v)
+ostream& operator<<(ostream& os, const VectorN& v)
 {
-    for (unsigned int i=0; i<n; i++) {
-        os << "("<<v.getValue(i)<<"; ")";
+    for (unsigned int i=0; i<v.getSize(); i++) {
+        os << "("<<v.getValue(i)<< ")";
     }
     return os;
 }
 
-istream& operator>>(istream &is, unsigned int n, Vector2D& v)
+istream& operator>>(istream &is, VectorN& v)
 {
-    double a[n];
-    for (unsigned int i=0; i<n; i++) {
+    double a[v.getSize()];
+    for (unsigned int i=0; i<v.getSize(); i++) {
         is >> a[i];
         v.setValue(i,a[i]);
     }
