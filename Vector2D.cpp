@@ -73,15 +73,20 @@ Vector2D Vector2D::operator*(const double &a) const {
     return q;
 }
 
+Vector2D Vector2D::operator/(const double &a) const {
+    Vector2D q(this->x / a, this->y / a);
+    return q;
+}
+
 void Vector2D::operator*=(double a) {
-    *this = (*this)*a;
+    *this = (*this) * a;
 }
 
 void Vector2D::operator+=(Vector2D v) {
     *this = (*this) + v;
 }
 
-Vector2D operator* (double a, const Vector2D v)
+Vector2D operator*(double a, const Vector2D v)
 {
     Vector2D q(a*(v.getX()),a*(v.getY()));
     return q;

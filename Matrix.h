@@ -44,6 +44,8 @@ public:
     Matrix operator*(Matrix b); // Оператор умножения на матрицу
 
     Matrix operator*(double b); // Оператор умножения матрицы на число
+
+    Matrix operator/(double b); // Оператор деления матрицы на число
 };
 
 Matrix operator*(double b, Matrix a);   // Оператор умножения числа на матрицу

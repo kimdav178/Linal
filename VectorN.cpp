@@ -76,12 +76,18 @@ VectorN VectorN::operator*(const double &a) {
     return f;
 }
 
-double VectorN::length ()
-{
-    double f=0;
-    for (unsigned int i=0; i<dim; i++)
-    {
-        f += x[i]*x[i];
+VectorN VectorN::operator/(const double &a) {
+    VectorN f(getSize());
+    for (unsigned int i = 0; i < getSize(); i++) {
+        f.setValue(i, getValue(i) / a);
+    }
+    return f;
+}
+
+double VectorN::length() {
+    double f = 0;
+    for (unsigned int i = 0; i < dim; i++) {
+        f += x[i] * x[i];
     }
     return sqrt(f);
 }

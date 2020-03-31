@@ -31,7 +31,7 @@ public:
 
     bool operator!=(const VectorN &v) const;   // Оператор неравенства
 
-    void operator=(const VectorN &v) const;    //Оператор присвоения для векторов
+    void operator=(const VectorN &v) const;    // Оператор присвоения для векторов
 
     VectorN operator+(const VectorN &v);   // Оператор сложения
 
@@ -39,16 +39,18 @@ public:
 
     VectorN operator*(const double &a);   // Умножение вектора на число
 
+    VectorN operator/(const double &a); // Деление вектора на число
+
     double length();   // Возвращает длину вектора
 
     double angle(VectorN a);   // Возвращает угол между двумя векторами (в радианах!) Не является оператором!!!
 };
 
-VectorN operator* (double a,VectorN& v);    // Умножение числа на вектор
+VectorN operator*(double a, VectorN &v);    // Умножение числа на вектор
 
-ostream& operator<<(ostream& os, const VectorN& v);    //Вывод вектора в поток
+ostream &operator<<(ostream &os, const VectorN &v);    // Вывод вектора в поток
 
-istream& operator>>(istream &is, VectorN& v);  //Инициалиация вектора из потока
+istream &operator>>(istream &is, VectorN &v);  // Инициалиация вектора из потока
 
 
 #endif //LINAL_VECTORN_H

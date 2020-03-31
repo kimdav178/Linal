@@ -99,6 +99,14 @@ Matrix Matrix::operator*(double b) {
     return c;
 }
 
+Matrix Matrix::operator/(double b) {
+    Matrix c(m, n);
+    for (unsigned int i = 0; i < m; i++)
+        for (unsigned int j = 0; j < n; j++)
+            c.setA(i, j, c.getA(i, j) / b);
+    return c;
+}
+
 Matrix Matrix::operator*(Matrix b) {
     Matrix c(m, b.getN());
     for (unsigned int i = 0; i < m; i++)
