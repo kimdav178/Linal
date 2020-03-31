@@ -37,9 +37,22 @@ void Matrix::setA(unsigned int i, unsigned int j, double x) {
 }
 
 double Matrix::det() {
-    for (unsigned int i = 0; i < m; i++) {
-
+    for (unsigned int k = 0; k < n; k++) {
+        Matrix b(m - 1, n - 1);
+        for (unsigned int i = 0; i < m - 1; i++) {
+            for (unsigned int j = 0; j < n - 1; j++) {
+                if ((i != 0) && (j < k)) {
+                    b.setA(i - 1, j, this->getA(i, j));
+                }
+                if ((i != 0) && (j > k)) {
+                    b.setA(i - 1, j - 1, this->getA(i, j));
+                }
+            }
+        }
+        if (m == 1) return this->getA(0, 0);
+        this->d = this->d + ((-1) ^ (k)) * b.det();
     }
+    return this->d;
 }
 
 bool Matrix::operator==(Matrix b) {
