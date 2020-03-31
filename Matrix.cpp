@@ -72,7 +72,7 @@ Matrix Matrix::operator-(Matrix b) {
     return c;
 }
 
-Matrix Matrix::operator=(Matrix b) {
+void Matrix::operator=(Matrix b) {
     for (unsigned int i = 0; i < m; i++)
         for (unsigned int j = 0; j < n; j++)
             a[i][j] = b.getA(i, j);

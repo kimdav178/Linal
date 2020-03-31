@@ -38,32 +38,40 @@ bool VectorN::operator== (const VectorN& v) const
     bool b = true;
     for (unsigned int i = 0; i < getSize(); i++)
     {
-        if (getValue(i) != v.getValue(i)) b=false;
+        if (getValue(i) != v.getValue(i)) b = false;
     }
     return b;
 }
 
-bool VectorN::operator!= (const VectorN& v) const
-{
+bool VectorN::operator!=(const VectorN &v) const {
     return !(*this == v);
 }
 
-VectorN VectorN::operator+ (const VectorN& v)
-{
+void VectorN::operator=(const VectorN &v) const {
+    for (unsigned int i = 0; i < dim; i++)
+        (*a[i]) = v.getValue(i);
+}
+
+VectorN VectorN::operator+(const VectorN &v) {
     VectorN f(getSize());
-    for (unsigned int i=0; i<getSize(); i++)
-    {
-        f.setValue(i, getValue(i)+v.getValue(i));
+    for (unsigned int i = 0; i < getSize(); i++) {
+        f.setValue(i, getValue(i) + v.getValue(i));
     }
     return f;
 }
 
-VectorN VectorN::operator* (const double & a)
-{
+VectorN VectorN::operator-(const VectorN &v) {
     VectorN f(getSize());
-    for (unsigned int i=0; i<getSize(); i++)
-    {
-        f.setValue(i,a*getValue(i));
+    for (unsigned int i = 0; i < getSize(); i++) {
+        f.setValue(i, getValue(i) - v.getValue(i));
+    }
+    return f;
+}
+
+VectorN VectorN::operator*(const double &a) {
+    VectorN f(getSize());
+    for (unsigned int i = 0; i < getSize(); i++) {
+        f.setValue(i, a * getValue(i));
     }
     return f;
 }

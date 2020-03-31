@@ -12,11 +12,15 @@ using namespace std;
 
 class Vector2D {
 protected:
-    double x;
-    double y;
+    double x;   //Координата х
+
+    double y;   //Координата у
+
 public:
     Vector2D(); //Конструктор по умолчанию (координаты равны нулю)
+
     Vector2D(double x, double y);   //Конструктор по двум координатам
+
     ~Vector2D();    //Деструктор
 
     double getX() const;    //Возвращает координату х
@@ -27,23 +31,25 @@ public:
 
     void setY(double y);    //Устанавливает новое значение у
 
-    double length ();    // Возваращает длину вектора
+    double length();    // Возваращает длину вектора
 
-    double angle (Vector2D a);    // Возвращает угол между двумя векторами (в радианах!)
+    double angle(Vector2D v);    // Возвращает угол между двумя векторами (в радианах!)
 
-    bool operator== (const Vector2D& v2) const; //Оператор сравнения двух векторов
+    bool operator==(const Vector2D &v) const; //Оператор сравнения двух векторов
 
-    bool operator!= (const Vector2D& v2) const; //Оператор неравенства
+    bool operator!=(const Vector2D &v) const; //Оператор неравенства
 
-    void operator *= (double a);    //Присвоить значение, умноженное на число
+    void operator=(Vector2D v); //Оператор присвоения для векторов
 
-    void operator += (Vector2D a);  //Присвоить значение, к которому прибавлен другой вектор
+    void operator*=(double a);    //Присвоить значение, умноженное на число
 
-    Vector2D operator+ (const Vector2D& v2) const;  //Оператор сложения двух векторов
+    void operator+=(Vector2D v);  //Присвоить значение, к которому прибавлен другой вектор
 
-    Vector2D operator- (const Vector2D& v2) const;  //Оператор вычитания двух векторов
+    Vector2D operator+(const Vector2D &v) const;  //Оператор сложения двух векторов
 
-    Vector2D operator* (const double &a) const; //Оператор умножения вектора на число
+    Vector2D operator-(const Vector2D &v) const;  //Оператор вычитания двух векторов
+
+    Vector2D operator*(const double &a) const; //Оператор умножения вектора на число
 };
 
 Vector2D operator* (double a, const Vector2D v);    //Оператор умножения вектора на число

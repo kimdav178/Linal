@@ -16,39 +16,39 @@ protected:
     double a[][100]; //Двумерный массив элементов
 
 public:
-    Matrix(unsigned int m, unsigned int n);
+    Matrix(unsigned int m, unsigned int n); //Конструктор через размеры матрицы
 
-    ~Matrix();
+    ~Matrix();  //Деструктор
 
-    unsigned int getM();
+    unsigned int getM();    //Возвращает число строк
 
-    unsigned int getN();
+    unsigned int getN();    //Возвращает число столбцов
 
-    double getA(unsigned int i, unsigned int j);
+    double getA(unsigned int i, unsigned int j);    //Возвращает элемент i-й строки j-го столбца
 
-    void setA(unsigned int i, unsigned int j, double x);
+    void setA(unsigned int i, unsigned int j, double x);    //Меняет значение элемента i-й строки j-го столбца
 
-    double det();
+    double det();   //Возвращает детерминант матрицы
 
-    bool operator==(Matrix b);
+    bool operator==(Matrix b);  //Оператор сравнения для матриц
 
-    bool operator!=(Matrix b);
+    bool operator!=(Matrix b);  //Оператор неравенства для матриц
 
-    Matrix operator=(Matrix b);
+    void operator=(Matrix b); //Оператор присвоения для матриц
 
-    Matrix operator+(Matrix b);
+    Matrix operator+(Matrix b); //Оператор сложения
 
-    Matrix operator-(Matrix b);
+    Matrix operator-(Matrix b); //Оператор вычитания
 
-    Matrix operator*(Matrix b);
+    Matrix operator*(Matrix b); //Оператор умножения на матрицу
 
-    Matrix operator*(double b);
+    Matrix operator*(double b); //Оператор умножения матрицы на число
 };
 
-Matrix operator*(double b, Matrix a);
+Matrix operator*(double b, Matrix a);   //Оператор умножения числа на матрицу
 
-ostream &operator<<(ostream &os, Matrix &a);
+ostream &operator<<(ostream &os, Matrix &a);    //Оператор вывода матрицы в поток
 
-istream &operator>>(istream &is, Matrix &a);
+istream &operator>>(istream &is, Matrix &a);    //Оператор ввода матрицы из потока
 
 #endif //LINAL_MATRIX_H

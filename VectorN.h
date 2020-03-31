@@ -13,19 +13,35 @@ using namespace std;
 class VectorN {
 protected:
     unsigned int dim;   // Размерность вектора
-    double* x;  // Указатель на массив коордиат
+
+    double *x;  // Указатель на массив коордиат
+
 public:
     VectorN(unsigned int n);    // Конструктор n-мерного вектора
-    ~VectorN(); //Деструктор
+
+    ~VectorN();                   //Деструктор
+
     unsigned int getSize() const;   // Возвращает размерность вектора
+
     double getValue(unsigned int i) const;  // Возвращает i-ю координату вектора
+
     void setValue(unsigned int i, double value);    // Устанавливает i-ю координату вектора
-    bool operator== (const VectorN& v) const;   // Оператор сравнения
-    bool operator!= (const VectorN& v) const;   // Оператор неравенства
-    VectorN operator+ (const VectorN& v);   // Оператор сложения
-    VectorN operator* (const double & a);   // Умножение вектора на число
-    double length ();   // Возвращает длину вектора
-    double angle (VectorN a);   // Возвращает угол между двумя векторами (в радианах!) Не является оператором!!!
+
+    bool operator==(const VectorN &v) const;   // Оператор сравнения
+
+    bool operator!=(const VectorN &v) const;   // Оператор неравенства
+
+    void operator=(const VectorN &v) const;    //Оператор присвоения для векторов
+
+    VectorN operator+(const VectorN &v);   // Оператор сложения
+
+    VectorN operator-(const VectorN &v);   // Оператор вычитания
+
+    VectorN operator*(const double &a);   // Умножение вектора на число
+
+    double length();   // Возвращает длину вектора
+
+    double angle(VectorN a);   // Возвращает угол между двумя векторами (в радианах!) Не является оператором!!!
 };
 
 VectorN operator* (double a,VectorN& v);    // Умножение числа на вектор

@@ -40,27 +40,31 @@ double Vector2D::length ()
     return sqrt(getX()*getX()+getY()*getY());
 }
 
-double Vector2D::angle (Vector2D a)
-{
+double Vector2D::angle(Vector2D v) {
 
-    return  acos((getX()*a.getX()+getY()*a.getY())/(length() * a.length()));
+    return acos((getX() * v.getX() + getY() * v.getY()) / (length() * v.length()));
 }
 
-bool Vector2D::operator==(const Vector2D &v2) const {
-    return ((this->x == v2.x) && (this->y == v2.y));
+bool Vector2D::operator==(const Vector2D &v) const {
+    return ((this->x == v.x) && (this->y == v.y));
 }
 
-bool Vector2D::operator!=(const Vector2D &v2) const {
-    return !(*this == v2);
+bool Vector2D::operator!=(const Vector2D &v) const {
+    return !(*this == v);
 }
 
-Vector2D Vector2D::operator+(const Vector2D &v2) const {
-    Vector2D q(this->x + v2.getX(), this->y + v2.getY());
+void Vector2D::operator=(Vector2D v) {
+    x = v.getX();
+    y = v.getY();
+}
+
+Vector2D Vector2D::operator+(const Vector2D &v) const {
+    Vector2D q(this->x + v.getX(), this->y + v.getY());
     return q;
 }
 
-Vector2D Vector2D::operator-(const Vector2D &v2) const {
-    Vector2D q(this->x - v2.getX(), this->y - v2.getY());
+Vector2D Vector2D::operator-(const Vector2D &v) const {
+    Vector2D q(this->x - v.getX(), this->y - v.getY());
     return q;
 }
 
@@ -73,8 +77,8 @@ void Vector2D::operator*=(double a) {
     *this = (*this)*a;
 }
 
-void Vector2D::operator += (Vector2D a) {
-    *this = (*this) + a;
+void Vector2D::operator+=(Vector2D v) {
+    *this = (*this) + v;
 }
 
 Vector2D operator* (double a, const Vector2D v)
