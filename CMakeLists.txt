@@ -3,4 +3,4 @@ project(Linal)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(VectorN.cpp VectorN.h Vector2D.cpp Vector2D.h Matrix.cpp Matrix.h)
+add_executable(VectorN.cpp VectorN.h Vector2D.cpp Vector2D.h Matrix.cpp Matrix.h main.cpp)

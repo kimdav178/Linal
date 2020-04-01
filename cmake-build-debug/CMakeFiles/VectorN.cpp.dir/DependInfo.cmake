@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/david/Рабочий стол/Linal/Matrix.cpp" "/home/david/Рабочий стол/Linal/cmake-build-debug/CMakeFiles/VectorN.cpp.dir/Matrix.cpp.o"
   "/home/david/Рабочий стол/Linal/Vector2D.cpp" "/home/david/Рабочий стол/Linal/cmake-build-debug/CMakeFiles/VectorN.cpp.dir/Vector2D.cpp.o"
+  "/home/david/Рабочий стол/Linal/main.cpp" "/home/david/Рабочий стол/Linal/cmake-build-debug/CMakeFiles/VectorN.cpp.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

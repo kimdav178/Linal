@@ -7,3 +7,8 @@ CMakeFiles/VectorN.cpp.dir/Matrix.cpp.o: ../Matrix.h
 CMakeFiles/VectorN.cpp.dir/Vector2D.cpp.o: ../Vector2D.cpp
 CMakeFiles/VectorN.cpp.dir/Vector2D.cpp.o: ../Vector2D.h
 
+CMakeFiles/VectorN.cpp.dir/main.cpp.o: ../Matrix.h
+CMakeFiles/VectorN.cpp.dir/main.cpp.o: ../Vector2D.h
+CMakeFiles/VectorN.cpp.dir/main.cpp.o: ../VectorN.h
+CMakeFiles/VectorN.cpp.dir/main.cpp.o: ../main.cpp
+

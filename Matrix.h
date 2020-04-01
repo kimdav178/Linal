@@ -14,7 +14,7 @@ protected:
     unsigned int m; //Число строк
     unsigned int n; //Число столбцов
     double d;       // Детерминант
-    double a[][100]; //Двумерный массив элементов
+    double a[100][100]; //Двумерный массив элементов
 
 public:
     Matrix(unsigned int m, unsigned int n); //Конструктор через размеры матрицы

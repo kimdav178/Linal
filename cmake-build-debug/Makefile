@@ -177,6 +177,33 @@ Vector2D.cpp.s:
 	$(MAKE) -f CMakeFiles/VectorN.cpp.dir/build.make CMakeFiles/VectorN.cpp.dir/Vector2D.cpp.s
 .PHONY : Vector2D.cpp.s
 
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/VectorN.cpp.dir/build.make CMakeFiles/VectorN.cpp.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/VectorN.cpp.dir/build.make CMakeFiles/VectorN.cpp.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/VectorN.cpp.dir/build.make CMakeFiles/VectorN.cpp.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... Vector2D.o"
 	@echo "... Vector2D.i"
 	@echo "... Vector2D.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

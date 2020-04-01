@@ -15,7 +15,6 @@ Matrix::Matrix(unsigned int m, unsigned int n) {
 }
 
 Matrix::~Matrix() {
-    delete[]a;
     m = 0;
     n = 0;
 }

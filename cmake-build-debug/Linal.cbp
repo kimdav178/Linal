@@ -99,6 +99,9 @@
 		<Unit filename="/home/david/Рабочий стол/Linal/VectorN.h">
 			<Option target="VectorN.cpp"/>
 		</Unit>
+		<Unit filename="/home/david/Рабочий стол/Linal/main.cpp">
+			<Option target="VectorN.cpp"/>
+		</Unit>
 		<Unit filename="/home/david/Рабочий стол/Linal/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

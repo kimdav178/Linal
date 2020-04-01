@@ -6,17 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Рабочий стол/Linal/Matrix.cpp
-Matrix.h
-/home/david/Рабочий стол/Linal/Matrix.h
-
 /home/david/Рабочий стол/Linal/Matrix.h
 iostream
 -
-
-/home/david/Рабочий стол/Linal/Vector2D.cpp
-Vector2D.h
-/home/david/Рабочий стол/Linal/Vector2D.h
 
 /home/david/Рабочий стол/Linal/Vector2D.h
 iostream
@@ -25,4 +17,22 @@ cmath
 -
 fstream
 -
+
+/home/david/Рабочий стол/Linal/VectorN.h
+iostream
+-
+fstream
+-
+cmath
+-
+
+/home/david/Рабочий стол/Linal/main.cpp
+iostream
+-
+Vector2D.h
+/home/david/Рабочий стол/Linal/Vector2D.h
+Matrix.h
+/home/david/Рабочий стол/Linal/Matrix.h
+VectorN.h
+/home/david/Рабочий стол/Linal/VectorN.h
 
